@@ -19,6 +19,7 @@
     "jshint": "^2.9.2",
     "jshint-stylish": "^2.2.0",
     "node-bourbon": "^4.2.8",
-    "node-neat": "^1.7.2"
+    "node-neat": "^1.7.2",
+    "normalize-scss": "^5.0.3"
   }
 }
