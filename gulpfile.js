@@ -2,6 +2,7 @@
 var gulp = require('gulp'),
 		gutil = require('gulp-util'),
 		sass = require('gulp-sass'),
+		autoprefixer = require('gulp-autoprefixer'),
 		jshint = require('gulp-jshint'),
 		uglify = require('gulp-uglify'),
 		bourbon = require('node-bourbon').includePaths,
@@ -15,6 +16,7 @@ gulp.task('sass', function() {
 		includePaths: bourbon,
 		includePaths: neat
 	}).on('error', sass.logError))
+	.pipe(autoprefixer())
 	.pipe(gulp.dest('build/styles/'))
 	.pipe(browserSync.reload({
 		stream: true
